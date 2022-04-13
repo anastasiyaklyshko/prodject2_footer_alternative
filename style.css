@@ -5,10 +5,51 @@
     url(/fonts/Ardeco.ttf);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+} 
 
+body {
+font-family: 'Ardeco', sans-serif;
+background: rgb(215, 203, 178);
+}
 
+header {
+  margin:0;
+  padding: 0;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content:space-between;
+}
+
+.container .card {
+  position: relative;
+}
+.container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container .card .face.face1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
 /*start scroll*/
-header p.fotogallery {
+section p.fotogallery {
   text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -111,18 +152,6 @@ header p.fotogallery {
 /*end scroll*/
 
 
-* {
-       margin: 0;
-       padding: 0;
-       box-sizing: border-box;
-       
-   } 
-
-body {
-   
-   font-family: 'Ardeco', sans-serif;
-   background: rgb(215, 203, 178);
-}
 footer {
     position: relative;
     width: 100%;
