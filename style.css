@@ -239,6 +239,15 @@ footer .menu {
     flex-wrap: wrap;
 }
 
+.footer__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 38%;
+    width: 38%;
+    height: 38%;
+}
+
 footer .social_icon li,
 footer .menu li
  {
