@@ -12,7 +12,8 @@
   
 } 
 
-body {
+body,
+footer {
 font-family: 'Ardeco', sans-serif;
 background: rgb(215, 203, 178);
 }
@@ -133,6 +134,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
        
 }
 
