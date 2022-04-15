@@ -17,9 +17,102 @@ footer {
 font-family: 'Ardeco', sans-serif;
 background: rgb(215, 203, 178);
 }
+/*start header*/
+nav.mainmenu {
+  background: #fff;
+  height: 100px;
+  width: 100%;
+}
+label .logo {
+  width: 16%;
+  max-width: 16%;
+  height: max-content;
+  padding: 0;
+  
+}
 
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  }
+  nav ul li a {
+    color: #2f2815;
+    font-size: 27px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+  }
+  a.active, 
+  a:hover {
+    background: #efecdb;
+    transition: .5s;
+    
+  }
+  .checkbtn {
+    font-size: 40px;
+    color: #2f2815;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
 
+  #check {
+    display: none;
+  }
+
+  @media (max-width:768px) {
+    label.logo {
+      padding-left: 50px;
+          }
+          nav ul li a {
+            font-size: 16px;
+          }
+}
+
+@media (max-width:700px) {
+  .checkbtn {
+    display: block;
+    padding-left: 50px;
+        }
+      ul#mainmenu {
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: #efecdb;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+        }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+      }
+      nav ul li a {
+        font-size: 20px;
+      }
+      a:hover, 
+      a.active { 
+        background: none;
+        color: #fff;
+      }
+      #check:checked ~ ul {
+        left: 0;
+        z-index: 2000;
+
+      }
+      
+}
+/*end header*/
 /*start scroll*/
+
 section p.fotogallery {
   text-align: center;
     margin-top: 15px;
