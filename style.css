@@ -42,7 +42,7 @@ nav ul li {
   }
   nav ul li a {
     color: #2f2815;
-    font-size: 27px;
+    font-size: 20px;
     padding: 10px 15px;
     text-transform: uppercase;
   }
@@ -66,10 +66,10 @@ nav ul li {
     display: none;
   }
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     
           nav ul li a {
-            font-size: 16px;
+            font-size: 12px;
           }
 }
 
